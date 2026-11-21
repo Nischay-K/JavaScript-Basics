@@ -1,0 +1,111 @@
+/* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    color: #222;
+    transition: all 0.3s ease;
+}
+
+/* Dark Theme */
+body.dark {
+    background-color: #121212;
+    color: #f5f5f5;
+}
+
+/* Theme Button */
+.theme-toggle {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.theme-toggle button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #001e4d;
+    color: white;
+    transition: all 0.3s;
+}
+
+.theme-toggle button:hover {
+    background-color: #003399;
+}
+
+/* Stopwatch Container */
+.stopwatch {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: all 0.3s;
+}
+
+body.dark .stopwatch {
+    background-color: #1e1e1e;
+    box-shadow: 0 8px 20px rgba(255,255,255,0.1);
+}
+
+/* Display */
+#display {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.buttons img {
+    width: 60px;
+    cursor: pointer;
+    transition: transform 0.2s, filter 0.2s;
+}
+
+.buttons img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+/* Lap Timer */
+.laps {
+    margin-top: 20px;
+    max-height: 150px;
+    overflow-y: auto;
+    text-align: left;
+}
+
+.laps h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.laps ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.laps li {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    font-family: monospace;
+    transition: all 0.3s;
+}
+
+body.dark .laps li {
+    background-color: #2a2a2a;
+}
